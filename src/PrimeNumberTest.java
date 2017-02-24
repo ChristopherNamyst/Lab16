@@ -8,19 +8,19 @@ import static org.junit.Assert.*;
  */
 public class PrimeNumberTest {
     @Test
-    public void locatePrime() throws Exception {
-        Assert.assertEquals("Prime", PrimeNumber.checkPrime(2));
+    public void test1() throws Exception {
+        Assert.assertEquals(2, PrimeNumber.checkPrime(1));
     }
     @Test
     public void test3(){
-        Assert.assertEquals("Prime", PrimeNumber.checkPrime(3));
+        Assert.assertEquals(3, PrimeNumber.checkPrime(2));
     }
     @Test
     public void test5(){
-        Assert.assertEquals("Prime", PrimeNumber.checkPrime(5));
+        Assert.assertEquals(5, PrimeNumber.checkPrime(3));
     }
     @Test
     public void test109(){
-        Assert.assertEquals("Prime", PrimeNumber.checkPrime(109));
+        Assert.assertEquals(19, PrimeNumber.checkPrime(8));
     }
 }
