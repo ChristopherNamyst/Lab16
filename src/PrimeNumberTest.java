@@ -9,7 +9,18 @@ import static org.junit.Assert.*;
 public class PrimeNumberTest {
     @Test
     public void locatePrime() throws Exception {
-        Assert.assertEquals("This is the first prime number", PrimeNumber.locatePrime(2));
+        Assert.assertEquals("Prime", PrimeNumber.checkPrime(2));
     }
-
+    @Test
+    public void test3(){
+        Assert.assertEquals("Prime", PrimeNumber.checkPrime(3));
+    }
+    @Test
+    public void test5(){
+        Assert.assertEquals("Prime", PrimeNumber.checkPrime(5));
+    }
+    @Test
+    public void test109(){
+        Assert.assertEquals("Prime", PrimeNumber.checkPrime(109));
+    }
 }
